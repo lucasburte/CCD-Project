@@ -12,13 +12,16 @@
 
               <!--bouton pour s'inscrire-->
 
-              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.
-                <a href="#" class="btn btn-success btn-circle">
-                  <i class="fas fa-check"></i>
-                </a></li>
 
+                <form action="" method="post">
 
+                  <li><p >18h30 - 20h00</p>
 
+                    <hr>Acheter du lait
+                    <a href="" class="btn btn-success btn-circle" type="submit">
+                      <i class="fas fa-check"></i>
+                    </a></li>
+                </form>
 
 
             </ul>
@@ -33,8 +36,7 @@
           <div class="list">
             <header>Mercredi</header>
             <ul>
-              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
-              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
+
             </ul>
             <footer>.</footer>
           </div>
@@ -47,24 +49,19 @@
           <div class="list">
             <header>Vendredi</header>
             <ul>
-              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
             </ul>
             <footer>.</footer>
           </div>
           <div class="list">
             <header>Samedi</header>
             <ul>
-              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
-              <li><p>12h00 - 14h00</p><hr>Lorem ipsum dolor sit amet.</li>
-              <li><p>14h00 - 16h00</p><hr>Lorem ipsum dolor sit amet.</li>
-              <li><p>16h00 - 17h00</p><hr>Lorem ipsum dolor sit amet.</li>
+
             </ul>
             <footer>.</footer>
           </div>
           <div class="list">
             <header>Dimanche</header>
             <ul>
-              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
             </ul>
             <footer>.</footer>
           </div>

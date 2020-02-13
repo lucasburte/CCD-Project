@@ -8,5 +8,6 @@ class Role extends Model {
     protected $table   = 'role';
     protected $id      = 'id';
     protected $label   = 'label';
+    protected $desc    = 'description';
     public $timestamps = false;
 }

@@ -5,7 +5,7 @@ namespace App\Database\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Creneau extends Model {
-    protected $database   = 'creneau';
+    protected $table      = 'creneau';
     protected $idCreneau  = 'idcreneau';
     protected $semaine    = 'semaine';
     protected $jour       = 'jour';

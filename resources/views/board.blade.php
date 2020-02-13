@@ -12,18 +12,18 @@
 
               <!--bouton pour s'inscrire-->
 
+              @foreach ($creneaux as $creneau)
+                @if ($creneau->jour == 1)
+                  <form action="" method="post">
 
-                <form action="" method="post">
-
-                  <li><p >18h30 - 20h00</p>
-
-                    <hr>Acheter du lait
-                    <a href="" class="btn btn-success btn-circle" type="submit">
-                      <i class="fas fa-check"></i>
-                    </a></li>
-                </form>
-
-
+                    <li><p>{{$creneau->heureDebut}} - {{$creneau->heureFin}}</p>
+                      <hr>{{$creneau->debut}}
+                      <a href="" class="btn btn-success btn-circle" type="submit">
+                        <i class="fas fa-check"></i>
+                      </a></li>
+                  </form>
+                @endif                  
+              @endforeach
             </ul>
             <footer>.</footer>
           </div>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Database\Models\User;
+use App\Database\Models\Creneau;
 
 use Illuminate\Http\Request;
 
@@ -18,6 +18,7 @@ class HomeController extends Controller {
         if ($resp)
             return $resp;
 
-        return view('board');
+        $creneaux = Creneau::get()->all();
+        return view('board', ['creneaux' => $creneaux]);
     }
 }

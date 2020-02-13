@@ -106,5 +106,20 @@ class DatabaseSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor, nulla eu massa nunc.',
             ),
         ));
+
+        DB::table('creneau')->insert(array(
+            array(
+                'jour' => 2,
+                'semaine' => 'A',
+                'debut' => 10,
+                'fin' => 12
+            ),
+            array(
+                'jour' => 4,
+                'semaine' => 'A',
+                'debut' => 14,
+                'fin' => 16
+            ),
+        ));
     }
 }

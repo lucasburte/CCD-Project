@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Creneau;
 
 use App\Http\Controllers\Controller;
 use App\Database\Models\Inscrit;
+use App\Database\Models\Role;
+use App\Database\Models\User;
 
 class CreneauController extends Controller {
 

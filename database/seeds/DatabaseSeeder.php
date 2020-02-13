@@ -120,6 +120,12 @@ class DatabaseSeeder extends Seeder
                 'debut' => 14,
                 'fin' => 16
             ),
+            array(
+                'jour' => 4,
+                'semaine' => 'A',
+                'debut' => 17,
+                'fin' => 19
+            ),
         ));
 
         DB::table('inscrit')->insert(array(

@@ -5,7 +5,7 @@
 
     <nav class="block bg-white mb-4 shadow">
           <h3>Page de connexion :</h3>
-          <form action="/auth" method="get">
+          <form action="{{ route('auth') }}" method="get">
             {{ csrf_field() }}
 
             <!--<p>Selectionnez un utilisateur</p>-->

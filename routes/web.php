@@ -18,12 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/users', function (Request $request) {
+    return (new UserListController())->getAll($request);
+});
+
 ///////////////////////////////////////////////
 
 Route::post('/auth', function (Request $request) {
     return (new LoginController())->login($request);
-});
-
-Route::post('/users', function (Request $request) {
-    return (new UserListController())->getAll($request);
 });

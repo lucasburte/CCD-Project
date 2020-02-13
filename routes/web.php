@@ -15,21 +15,21 @@ use Illuminate\Http\Request;
 
 Route::get('/', 'HomeController@handle')->name('home');
 
-Route::get('/login', 'Auth\UserLoginController@handle')->name('login');
+Route::get('login', 'Auth\UserLoginController@handle')->name('login');
 
-Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
+Route::get('auth', 'Auth\LoginController@handle')->name('auth');
 
-Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
+Route::get('logout', 'Auth\LogoutController@handle')->name('logout');
 
-Route::get('/besoin','BesoinController@handle')->name('besoin');
+Route::get('besoin','BesoinController@handle')->name('besoin');
 
-Route::get('/users', 'User\ListController@handle')->name('users');
+Route::get('users', 'User\ListController@handle')->name('users');
 
-Route::get('/user/{id}', 'User\ProfileController@handle')->name('profile');
+Route::get('user/{id}', 'User\ProfileController@handle')->name('profile');
 
 ///////////////////////////////////////////////
 
-Route::get('/css/{file}', 'Res\CSSController@handle')->name('css');
-Route::get('/js/{file}', 'Res\JSController@handle')->name('js');
-Route::get('/vendor/{file}', 'Res\VendorController@handle')->name('vendor');
-Route::get('/img/{file}', 'Res\ImgController@handle')->name('img');
+Route::get('css/{file}', 'Res\CSSController@handle')->name('css');
+Route::get('js/{file}', 'Res\JSController@handle')->name('js');
+Route::get('vendor/{file}', 'Res\VendorController@handle')->name('vendor');
+Route::get('img/{file}', 'Res\ImgController@handle')->name('img');

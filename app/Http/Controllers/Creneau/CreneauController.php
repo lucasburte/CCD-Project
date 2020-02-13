@@ -32,10 +32,11 @@ class CreneauController
     public function supprimerCreneau($jour,$semaine,$deb,$fin){
      $creneau = Creneau::where('jour','=',$jour,'and','semaine','=',$semaine,'and','debut','=',$deb,'and','fin','=',$fin)->first();
      //supprimer le creneau
+        $creneau->delete();
     }
 
     public function modifierCreneau($jour,$semaine,$deb,$fin){
-       
+
     }
 
 }

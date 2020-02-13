@@ -85,7 +85,7 @@
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item"
                   @if (array_key_exists("login", $_SESSION)))
-                    {{ 'href=/logout?redirect=' . request()->path() }}
+                    {{ 'href=' . route('logout') . '?redirect=' . request()->path() }}
                   @endif >
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Déconnexion

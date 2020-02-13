@@ -22,6 +22,7 @@ class LogoutController extends Controller
             return response('User is not logged in...', 400);
         } else {
             unset($_SESSION['login']);
+            unset($_SESSION['id']);
             return redirect($request->query('redirect'));
         }
     }

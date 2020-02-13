@@ -13,6 +13,6 @@ class UserListController extends Controller {
     public function getAll() {
         $users = User::get()->all();
 
-        return view('user', ['users' => $users]);
+        return view('connection', ['users' => $users]);
     }
 }

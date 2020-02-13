@@ -36,6 +36,6 @@ class CreneauController extends Controller {
          $membres[] = ['role' => $i->role(), 'user' => $i->user()];
       }
 
-      return view('creneau', ['membres' => $membres]);
+      return view('creneau', ['membres' => $membres, 'id_creneau' => $id]);
    }
 }

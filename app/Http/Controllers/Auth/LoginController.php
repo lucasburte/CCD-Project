@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Database\Models\User;
 
 use Illuminate\Http\Request;
 
@@ -16,10 +17,10 @@ class LoginController extends Controller
         $request = request();
 
         $id = $request->query('user');
-        $name = User::where('iduser', '=', $id)->first();
+        $u = User::where('iduser', '=', $id)->first();
 
-        if ($name) {
-            $_SESSION['login'] = $name;
+        if ($u) {
+            $_SESSION['login'] = $u['nom'];
             $_SESSION['id'] = $id;
             return redirect($request->query('redirect'));
         } else

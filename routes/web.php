@@ -27,6 +27,8 @@ Route::get('/users', 'User\ListController@handle')->name('users');
 
 Route::get('/user/{id}', 'User\ProfileController@handle')->name('profile');
 
+Route::get('/signup/{idcreneau}/{idrole}/{id}', 'Creneau\SignupController@handle')->name('signup');
+
 ///////////////////////////////////////////////
 
 Route::get('css/{file}', 'Res\CSSController@handle')->name('css');

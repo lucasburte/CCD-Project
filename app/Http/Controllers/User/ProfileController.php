@@ -18,7 +18,7 @@ class ProfileController extends Controller {
         if ($resp)
             return $resp;
 
-        $user = User::where('id', '=', $id)->first();
+        $user = User::where('iduser', '=', $id)->first();
         if (!$user)
             return response('User not found', 404);
 

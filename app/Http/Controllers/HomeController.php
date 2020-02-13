@@ -19,6 +19,12 @@ class HomeController extends Controller {
             return $resp;
 
         $creneaux = Creneau::get()->all();
-        return view('board', ['creneaux' => $creneaux]);
+
+        $array = [1 => 'Lundi', 2 => 'Mardi', 3 => 'Mercredi', 4 => 'Jeudi', 5 => 'Vendredi', 6 => 'Samedi', 7 => 'Dimanche'];
+
+        //($creneaux);
+
+        //$Inscrit = Inscrit::where('idCreneau', '=', );
+        return view('board', ['creneaux' => $creneaux, 'array' => $array]);
     }
 }

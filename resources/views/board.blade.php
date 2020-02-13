@@ -6,67 +6,25 @@
         <nav class="navbar app">Créneaux (S1)</nav>
         <nav class="navbar board"></nav>
         <div class="lists">
-          <div class="list">
-            <header>Lundi</header>
-            <ul>
-
-              <!--bouton pour s'inscrire-->
-
-              @foreach ($creneaux as $creneau)
-                @if ($creneau->jour == 1)
-                  <form action="" method="post">
-
-                    <li><p>{{$creneau->heureDebut}} - {{$creneau->heureFin}}</p>
-                      <hr>{{$creneau->debut}}
-                      <a href="" class="btn btn-success btn-circle" type="submit">
-                        <i class="fas fa-check"></i>
-                      </a></li>
-                  </form>
-                @endif                  
+          @foreach ($array as $key=>$item)
+          <div class="list">   
+              <header>{{$item}}</header>
+              <ul>
+                @foreach ($creneaux as $creneau)
+                  @if ($creneau->jour == $key)
+                      <li>
+                        <hr>{{$creneau['debut']}}h - {{$creneau['fin']}}h
+                        <br>
+                        <a href={{ route('besoin')}} class="btn btn-info btn-circle" type="submit">
+                          <i class="fas fa-info"></i>
+                        </a>
+                      </li>
+                  @endif                  
               @endforeach
             </ul>
             <footer>.</footer>
           </div>
-          <div class="list">
-            <header>Mardi</header>
-            <ul>
-            </ul>
-            <footer>.</footer>
-          </div>
-          <div class="list">
-            <header>Mercredi</header>
-            <ul>
-
-            </ul>
-            <footer>.</footer>
-          </div>
-          <div class="list">
-            <header>Jeudi</header>
-            <ul>
-            </ul>
-            <footer>.</footer>
-          </div>
-          <div class="list">
-            <header>Vendredi</header>
-            <ul>
-            </ul>
-            <footer>.</footer>
-          </div>
-          <div class="list">
-            <header>Samedi</header>
-            <ul>
-
-            </ul>
-            <footer>.</footer>
-          </div>
-          <div class="list">
-            <header>Dimanche</header>
-            <ul>
-            </ul>
-            <footer>.</footer>
-          </div>
+          @endforeach
         </div>
-      </div>
-
     </div>
     @endsection

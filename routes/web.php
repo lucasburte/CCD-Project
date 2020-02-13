@@ -12,6 +12,7 @@
 */
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\UserListController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,4 +22,8 @@ Route::get('/', function () {
 
 Route::post('/auth', function (Request $request) {
     return (new LoginController())->login($request);
+});
+
+Route::post('/users', function (Request $request) {
+    return (new UserListController())->getAll($request);
 });

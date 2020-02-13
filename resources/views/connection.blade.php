@@ -8,8 +8,8 @@
                 <select name="user" id="user-select">
                     <option value="">--Please choose an option--</option>
                     @foreach ($users as $user)
-                        <option value="{{ $user->name }}">{{ $user->name }}</option>
-                    @endforeach 
-            <input type="submit"> 
+                        <option value="{{ $user->nom }}">{{ $user->nom }}</option>
+                    @endforeach
+            <input type="submit">
         </form>
     @endsection

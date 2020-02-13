@@ -14,7 +14,7 @@
                   @if ($creneau->jour == $key)
                       <li>
                         {{$creneau['debut']}}h - {{$creneau['fin']}}h
-                        <br>
+                        <br><hr>
                         <a href={{ route('creneau', ['id' => $creneau->idcreneau]) }} class="btn btn-info btn-circle" type="submit">
                           <i class="fas fa-info"></i>
                         </a>

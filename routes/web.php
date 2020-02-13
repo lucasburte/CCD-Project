@@ -11,6 +11,14 @@
 |
 */
 
+use App\Http\Controllers\Auth\LoginController;
+
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+///////////////////////////////////////////////
+
+Route::post('/auth', function (Request $request) {
+    return (new LoginController())->login($request);
 });

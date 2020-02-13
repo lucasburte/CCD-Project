@@ -1,25 +1,27 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Database\Models\User;
 
 use Illuminate\Http\Request;
 
-class UsersController extends Controller {
+class ProfileController extends Controller {
     public function __construct() {
         parent::__construct();
     }
 
-    public function handle() {
+    public function handle($id) {
         $request = request();
         $resp = parent::redirectIfNeeded($request);
         if ($resp)
             return $resp;
 
-        $users = User::get()->all();
+        $user = User::where('id', '=', $id)->first();
+        if (!$user)
+            return response('User not found', 404);
 
-        return view('users', ['users' => $users]);
+        return view('user', ['user' => $user]);
     }
 }

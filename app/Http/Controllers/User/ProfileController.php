@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Database\Models\User;
+use App\Database\Models\Role;
 
 use Illuminate\Http\Request;
 
@@ -22,7 +23,7 @@ class ProfileController extends Controller {
         if (!$user)
             return response('User not found', 404);
 
-        $role = User::where('idrole', '=', $user['idrole'])->first();
+        $role = Role::where('idrole', '=', $user['idrole'])->first();
         if (!$role)
             return response('Role not found', 404);
 

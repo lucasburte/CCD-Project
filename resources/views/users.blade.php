@@ -6,7 +6,7 @@
     <h3>Liste des utilisateurs :</h3>
     <ul class="liste-users">
     @foreach ($users as $user)
-    <a href="{{ route('user', ['id' => $user->iduser]) }}" class="case-users bg-white mb-4 shadow">
+    <a href="{{ route('profile', ['id' => $user->iduser]) }}" class="case-users bg-white mb-4 shadow">
         <span>{{ $user->nom }}</span>
     </a>
     @endforeach

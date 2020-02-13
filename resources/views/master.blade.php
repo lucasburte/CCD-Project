@@ -47,6 +47,9 @@
       <a class="nav-link" href="{{ route('home') }}">
          <i class="fas fa-laugh-wink"></i>
           <span>Board</span></a>
+          <a class="nav-link" href="{{ route('users') }}">
+            <i class="fas fa-laugh-wink"></i>
+             <span>Liste utilisateur</span></a>
       </li>
 
       <!-- Divider -->

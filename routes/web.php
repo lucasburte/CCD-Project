@@ -23,4 +23,8 @@ Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
 
 Route::get('/besoin','BesoinController@handle')->name('besoin');
 
-Route::get('/users', 'UsersController@handle')->name('users');
+Route::get('/users', 'User\ListController@handle')->name('users');
+
+Route::get('/user/{id}', 'User\ProfileController@handle')->name('profile');
+
+///////////////////////////////////////////////

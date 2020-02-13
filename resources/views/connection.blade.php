@@ -3,15 +3,14 @@
 @section('title', 'connexion')
     @section('content')
 
-    <nav class="auth bg-white mb-4 shadow">
-        <div class="auth-block">
+    <nav class="block bg-white mb-4 shadow">
           <h3>Page de connexion :</h3>
           <form action="/auth" method="get">
             {{ csrf_field() }}
 
-            <p>Selectionnez un utilisateur</p>
+            <!--<p>Selectionnez un utilisateur</p>-->
             <select name="user" id="user-select">
-                <option value="">--Please choose an option--</option>
+                <option value="">--Selectionnez un utilisateur--</option>
                 @foreach ($users as $user)
                     <option value="{{ $user->nom }}">{{ $user->nom }}</option>
                 @endforeach
@@ -22,6 +21,5 @@
 
             <input type="submit">
           </form>
-        </div>
       </nav>
     @endsection

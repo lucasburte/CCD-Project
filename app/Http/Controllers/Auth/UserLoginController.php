@@ -7,7 +7,7 @@ use App\Database\Models\User;
 
 use Illuminate\Http\Request;
 
-class UserListController extends Controller {
+class UserLoginController extends Controller {
     public function __construct() {
         parent::__construct();
     }

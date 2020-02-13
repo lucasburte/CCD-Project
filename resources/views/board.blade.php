@@ -9,7 +9,7 @@
           <div class="list">
             <header>Lundi</header>
             <ul>
-              
+
               <!--bouton pour s'inscrire-->
 
               <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Creneau extends Model {
     protected $database   = 'creneau';
+    protected $idCreneau  = 'id';
     protected $semaine    = 'semaine';
     protected $jour       = 'jour';
     protected $heureDebut = 'debut';

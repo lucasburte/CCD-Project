@@ -7,7 +7,19 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
+use Illuminate\Http\Request;
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct() {}
+
+    public function handle(Request $request) {
+        if (!isset($_SESSION['login'])) {
+            // -> get route for /auth
+            // -> redirect
+            return response('', 403);
+        }
+    }
 }

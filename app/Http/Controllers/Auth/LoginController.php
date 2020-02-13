@@ -7,10 +7,14 @@ use App\Http\Controllers\Controller;
 class LoginController extends Controller
 {
     public function __construct() {
-
+        parent::__construct();
     }
 
-    public function login($request) {
+    public function handle(Request $request) {
+        $resp = parent::handle($request);
+        if ($resp)
+            return $resp;
+
         $name = $request->input('name');
 
         // TODO: handle connection

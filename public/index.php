@@ -23,6 +23,8 @@ define('LARAVEL_START', microtime(true));
 
 require __DIR__.'/../vendor/autoload.php';
 
+session_start();
+
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -58,3 +60,5 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+session_destroy();

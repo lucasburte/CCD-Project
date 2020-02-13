@@ -14,18 +14,18 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\UserListController;
 
-Route::get('/', function () {
-    return view('connection');
-})->name('home');
+use Illuminate\Http\Request;
+
+Route::get('/', 'HomeController@handle')->name('home');
 
 /* Route::get('/users', function (Request $request) {
     return (new UserListController())->getAll();
 }); */
 
-Route::get('/users', 'Auth\UserListController@getAll');
+Route::get('/users', function (Request $req) {
+    return (new UserListController())->handle($req);
+})->name('get_users');
 
 ///////////////////////////////////////////////
 
-Route::post('/auth', function (Request $request) {
-    return (new LoginController())->login($request);
-});
+Route::post('/auth', 'Auth\LoginController@handle');

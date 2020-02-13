@@ -2,117 +2,63 @@
 
 @section('title', 'Connexion')
     @section('content')
-        <div class="ui">
-            <nav class="navbar app">App bar</nav>
-            <nav class="navbar board">Board bar</nav>
-            <div class="lists">
-                <div class="list">
-                    <header>List header</header>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Header</header>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>
-                            <img src="holder.js/300x150?auto=yes&bg=#ccc" alt="">
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Another List</header>
-                    <ul>
-                        <li>Just some text</li>
-                        <li>Just some text</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Header</header>
-                    <ul>
-                        <li>
-                            <img src="holder.js/600x400?auto=yes&bg=#ccc" alt="">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>
-                            <img src="holder.js/150x150?auto=yes&bg=#ccc" alt="">
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Another List</header>
-                    <ul>
-                        <li>Just some text</li>
-                        <li>Yet another card</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Header</header>
-                    <ul>
-                        <li>
-                            <img src="holder.js/150x150?auto=yes&bg=#ccc" alt="">
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>
-                            <img src="holder.js/600x400?auto=yes&bg=#ccc" alt="">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet metus laoreet, ut condimentum</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-                <div class="list">
-                    <header>Another List</header>
-                    <ul>
-                        <li>Just some text</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis enim sit amet</li>
-                        <li>Some more text</li>
-                        <li>Some more text</li>
-                    </ul>
-                    <footer>Add a card...</footer>
-                </div>
-            </div>
+    <div class="ui">
+        <nav class="navbar app">Créneaux (S1)</nav>
+        <nav class="navbar board"></nav>
+        <div class="lists">
+          <div class="list">
+            <header>Lundi</header>
+            <ul>
+              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Mardi</header>
+            <ul>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Mercredi</header>
+            <ul>
+              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
+              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Jeudi</header>
+            <ul>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Vendredi</header>
+            <ul>
+              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Samedi</header>
+            <ul>
+              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
+              <li><p>12h00 - 14h00</p><hr>Lorem ipsum dolor sit amet.</li>
+              <li><p>14h00 - 16h00</p><hr>Lorem ipsum dolor sit amet.</li>
+              <li><p>16h00 - 17h00</p><hr>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <footer>.</footer>
+          </div>
+          <div class="list">
+            <header>Dimanche</header>
+            <ul>
+              <li><p>10h00 - 12h00</p><hr>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <footer>.</footer>
+          </div>
         </div>
+      </div>
+
+    </div>
     @endsection

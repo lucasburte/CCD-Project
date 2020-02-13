@@ -2,7 +2,11 @@
 
 @section('title', 'connexion')
     @section('content')
-        <form action="/auth" method="post">
+
+    <nav class="auth bg-white mb-4 shadow">
+        <div class="auth-block">
+          <h3>Page de connexion :</h3>
+          <form action="/auth" method="post">
             <p>Selectionnez un utilisateur</p>
                 <select name="user" id="user-select">
                     <option value="">--Please choose an option--</option>
@@ -13,4 +17,6 @@
 
             @csrf
         </form>
+        </div>            
+      </nav>
     @endsection

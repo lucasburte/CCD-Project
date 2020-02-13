@@ -69,6 +69,20 @@ body {
   background-color: #fff;
 }
 
+.auth {
+  height: 10rem;
+  width: 50%;
+  text-align: center;
+  vertical-align: 0;
+  border: 0;
+  font-weight: 900;
+  content: '\f105';
+}
+
+.auth-block {
+  padding: 10px;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }

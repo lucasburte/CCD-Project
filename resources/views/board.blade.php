@@ -9,7 +9,18 @@
           <div class="list">
             <header>Lundi</header>
             <ul>
-              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.</li>
+              
+              <!--bouton pour s'inscrire-->
+
+              <li><p>18h30 - 20h00</p><hr>Lorem ipsum dolor sit amet.
+                <a href="#" class="btn btn-success btn-circle">
+                  <i class="fas fa-check"></i>
+                </a></li>
+
+
+
+
+
             </ul>
             <footer>.</footer>
           </div>

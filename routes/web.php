@@ -25,4 +25,7 @@ Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
 Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
 
+Route::get('/besoin','BesoinController@handle')->name('besoin');
+
+
 ///////////////////////////////////////////////

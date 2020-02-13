@@ -11,18 +11,16 @@
 |
 */
 
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\UserListController;
-use App\Http\Controllers\HomeController;
-
 use Illuminate\Http\Request;
 
 Route::get('/', 'HomeController@handle')->name('home');
 
-Route::get('/users', 'Auth\UserListController@handle')->name('login');
+Route::get('/login', 'Auth\UserLoginController@handle')->name('login');
 
 Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
 Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
+
+Route::get('/users', 'UsersController@handle')->name('users');
 
 ///////////////////////////////////////////////

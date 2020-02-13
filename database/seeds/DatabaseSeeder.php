@@ -16,73 +16,73 @@ class DatabaseSeeder extends Seeder
                 'iduser' => 1,
                 'nom' => 'Cassandre',
                 'idrole' => 1,
-                'pp' => '../../public/img/1.jpg'
+                'pp' => '1.jpg'
             ),
             array(
                 'iduser' => 2,
                 'nom' => 'Achille',
                 'idrole' => 2,
-                'pp' => '../../public/img/2.jpg'
+                'pp' => '2.jpg'
             ),
             array(
                 'iduser' => 3,
                 'nom' => 'Calypso',
                 'idrole' => 3,
-                'pp' => '../../public/img/3.jpg'
+                'pp' => '3.jpg'
               ),
             array(
                 'iduser' => 4,
                 'nom' => 'Bacchus',
                 'idrole' => 4,
-                'pp' => '../../public/img/4.jpg'
+                'pp' => '4.jpg'
             ),
             array(
                 'iduser' => 5,
                 'nom' => 'Diane',
                 'idrole' => 5,
-                'pp' => '../../public/img/5.jpg'
+                'pp' => '5.jpg'
             ),
             array(
                 'iduser' => 6,
                 'nom' => 'Clark',
                 'idrole' => 6,
-                'pp' => '../../public/img/6.jpg'
+                'pp' => '6.jpg'
             ),
             array(
                 'iduser' => 7,
                 'nom' => 'Helene',
                 'idrole' => 1,
-                'pp' => '../../public/img/7.jpg'
+                'pp' => '7.jpg'
             ),
             array(
                 'iduser' => 8,
                 'nom' => 'Jason',
                 'idrole' => 2,
-                'pp' => '../../public/img/8.jpg'
+                'pp' => '8.jpg'
             ),
             array(
                 'iduser' => 9,
                 'nom' => 'Bruce',
                 'idrole' => 3,
-                'pp' => '../../public/img/9.jpg'
+                'pp' => '9.jpg'
             ),
             array(
                 'iduser' => 10,
                 'nom' => 'Pénélope',
                 'idrole' => 4,
-                'pp' => '../../public/img/10.jpg'
+                'pp' => '10.jpg'
             ),
             array(
                 'iduser' => 11,
                 'nom' => 'Ariane',
                 'idrole' => 5,
-                'pp' => '../../public/img/11.jpg'
+                'pp' => '11.jpg'
               ),
             array(
                 'iduser' => 12,
                 'nom' => 'Lois',
                 'idrole' => 6,
-                'pp' => '../../public/img/12.jpg'
+                'pp' => '12.jpg'
             ),
         ));
 

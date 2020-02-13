@@ -22,6 +22,7 @@ class LoginController extends Controller
         if ($u) {
             $_SESSION['login'] = $u['nom'];
             $_SESSION['id'] = $id;
+            $_SESSION['pp'] = $u['pp'];
             return redirect($request->query('redirect'));
         } else
             return response('User not authenticated', 403);

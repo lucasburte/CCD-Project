@@ -36,6 +36,10 @@ class CreneauController extends Controller {
          $membres[] = ['role' => $i->role(), 'user' => $i->user()];
       }
 
-      return view('creneau', ['membres' => $membres, 'id_creneau' => $id]);
+      $u = User::where('iduser', '=', $_SESSION['id'])->first();
+      if (!$u)
+         return response('', 404);
+
+      return view('creneau', ['membres' => $membres, 'id_creneau' => $id, 'user' => $u]);
    }
 }

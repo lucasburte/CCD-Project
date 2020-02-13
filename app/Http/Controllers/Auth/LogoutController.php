@@ -23,6 +23,7 @@ class LogoutController extends Controller
         } else {
             unset($_SESSION['login']);
             unset($_SESSION['id']);
+            unset($_SESSION['pp']);
             return redirect($request->query('redirect'));
         }
     }

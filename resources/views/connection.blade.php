@@ -19,7 +19,7 @@
 
             <input type="hidden" value="{{ $route }}" name="redirect">
 
-            <input type="submit">
+            <input type="submit" value="Valider">
           </form>
       </nav>
     @endsection

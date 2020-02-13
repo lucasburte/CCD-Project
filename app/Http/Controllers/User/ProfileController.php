@@ -22,7 +22,7 @@ class ProfileController extends Controller {
         if (!$user)
             return response('User not found', 404);
 
-        $role = User::where('idrole', '=', $id['idrole'])->first();
+        $role = User::where('idrole', '=', $user['idrole'])->first();
         if (!$role)
             return response('Role not found', 404);
 

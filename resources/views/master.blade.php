@@ -44,7 +44,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-      <a class="nav-link" href="{{ route('board') }}">
+      <a class="nav-link" href="/">
          <i class="fas fa-laugh-wink"></i>
           <span>Board</span></a>
       </li>

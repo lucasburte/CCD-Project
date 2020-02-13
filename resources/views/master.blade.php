@@ -31,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
         <div class="sidebar-brand-icon rotate-n-15">
           <!--<i class="fas fa-laugh-wink"></i>-->
           <img src="img/logo.svg" style="height:50px; width:50px;">
@@ -44,7 +44,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-      <a class="nav-link" href="/">
+      <a class="nav-link" href="{{ route('home') }}">
          <i class="fas fa-laugh-wink"></i>
           <span>Board</span></a>
       </li>

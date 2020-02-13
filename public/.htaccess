@@ -5,7 +5,7 @@
 
     RewriteEngine On
 
-    RewriteBase /www/burte11u/public/
+    RewriteBase /www/bergeron8u/ccd/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

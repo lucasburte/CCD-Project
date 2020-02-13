@@ -15,17 +15,17 @@ use Illuminate\Http\Request;
 
 Route::get('/', 'HomeController@handle')->name('home');
 
-Route::get('login', 'Auth\UserLoginController@handle')->name('login');
+Route::get('/login', 'Auth\UserLoginController@handle')->name('login');
 
-Route::get('auth', 'Auth\LoginController@handle')->name('auth');
+Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
-Route::get('logout', 'Auth\LogoutController@handle')->name('logout');
+Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
 
 Route::get('creneau/{id}','Creneau\CreneauController@handle')->name('creneau');
 
-Route::get('users', 'User\ListController@handle')->name('users');
+Route::get('/users', 'User\ListController@handle')->name('users');
 
-Route::get('user/{id}', 'User\ProfileController@handle')->name('profile');
+Route::get('/user/{id}', 'User\ProfileController@handle')->name('profile');
 
 ///////////////////////////////////////////////
 

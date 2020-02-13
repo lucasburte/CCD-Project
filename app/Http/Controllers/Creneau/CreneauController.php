@@ -15,9 +15,7 @@ class CreneauController
 
     public function nouveauCreneau($jour,$semaine,$deb,$fin){
         $creneau = new Creneau() ;
-
         //verifier si le creneau n'est pas déjà utilisé ou contenu dans un autre créneau
-
         if(Creneau::where('jour','=', $jour)->first() && Creneau::where('semaine','=',$semaine)){
             //verifier que l'heure n'est pas contenue dans un autre horaire
             echo "erreur, un creneau existe deja pour ce jour !" ;
@@ -29,6 +27,15 @@ class CreneauController
         }
 
         $creneau->save();
+    }
+
+    public function supprimerCreneau($jour,$semaine,$deb,$fin){
+     $creneau = Creneau::where('jour','=',$jour,'and','semaine','=',$semaine,'and','debut','=',$deb,'and','fin','=',$fin)->first();
+     //supprimer le creneau
+    }
+
+    public function modifierCreneau($jour,$semaine,$deb,$fin){
+       
     }
 
 }

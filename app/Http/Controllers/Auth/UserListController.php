@@ -10,8 +10,8 @@ class UserListController extends Controller {
 
     }
 
-    public function getAll(Request $_) {
-        $users = User::users();
+    public function getAll() {
+        $users = User::get()->all();
 
         $json = '[';
         foreach ($users as $user) {

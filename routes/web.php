@@ -19,7 +19,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/users', function (Request $request) {
-    return (new UserListController())->getAll($request);
+    return (new UserListController())->getAll();
 });
 
 ///////////////////////////////////////////////

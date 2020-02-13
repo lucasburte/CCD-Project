@@ -15,50 +15,62 @@ class DatabaseSeeder extends Seeder
             array(
                 'iduser' => 1,
                 'nom' => 'Cassandre',
+                'idrole' => 1,
             ),
             array(
                 'iduser' => 2,
                 'nom' => 'Achille',
+                'idrole' => 2,
             ),
             array(
                 'iduser' => 3,
                 'nom' => 'Calypso',
+                'idrole' => 3,
               ),
             array(
                 'iduser' => 4,
                 'nom' => 'Bacchus',
+                'idrole' => 4,
             ),
             array(
                 'iduser' => 5,
                 'nom' => 'Diane',
+                'idrole' => 5,
             ),
             array(
                 'iduser' => 6,
                 'nom' => 'Clark',
+                'idrole' => 6,
             ),
             array(
                 'iduser' => 7,
                 'nom' => 'Helene',
+                'idrole' => 1,
             ),
             array(
                 'iduser' => 8,
                 'nom' => 'Jason',
+                'idrole' => 2,
             ),
             array(
                 'iduser' => 9,
                 'nom' => 'Bruce',
+                'idrole' => 3,
             ),
             array(
                 'iduser' => 10,
                 'nom' => 'Pénélope',
+                'idrole' => 4,
             ),
             array(
                 'iduser' => 11,
                 'nom' => 'Ariane',
+                'idrole' => 5,
               ),
             array(
                 'iduser' => 12,
                 'nom' => 'Lois',
+                'idrole' => 6,
             ),
         ));
 

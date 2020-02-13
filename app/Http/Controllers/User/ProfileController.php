@@ -26,6 +26,6 @@ class ProfileController extends Controller {
         if (!$role)
             return response('Role not found', 404);
 
-        return view('user', ['user' => $user], 'role', ['role' => $role]);
+        return view('user', ['user' => $user, 'role' => $role]);
     }
 }

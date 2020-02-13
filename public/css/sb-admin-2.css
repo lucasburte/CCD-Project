@@ -69,7 +69,7 @@ body {
   background-color: #fff;
 }
 
-.auth {
+.block {
   margin: auto;
   height: 10rem;
   width: 75%;
@@ -78,10 +78,49 @@ body {
   border: 0;
   font-weight: 900;
   content: '\f105';
+  padding: 10px;
 }
 
-.auth-block {
-  padding: 10px;
+.liste-users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.liste-users > a.case-users {
+  padding: 15px;
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: 100%;
+
+  min-width: 100px;
+  min-height: 25px;
+
+  cursor: pointer;
+
+  border-radius: 2% / 5%;
+
+  transition: background 0.1s;
+}
+
+.liste-users > a.case-users > span {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
 }
 
 [tabindex="-1"]:focus {

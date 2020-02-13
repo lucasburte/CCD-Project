@@ -138,6 +138,54 @@ class DatabaseSeeder extends Seeder
                 'debut' => 17,
                 'fin' => 19
             ),
+            array(
+                'jour' => 1,
+                'semaine' => 'A',
+                'debut' => 10,
+                'fin' => 12
+            ),
+            array(
+                'jour' => 1,
+                'semaine' => 'A',
+                'debut' => 17,
+                'fin' => 18
+            ),
+            array(
+                'jour' => 3,
+                'semaine' => 'A',
+                'debut' => 8,
+                'fin' => 10
+            ),
+            array(
+                'jour' => 3,
+                'semaine' => 'A',
+                'debut' => 10,
+                'fin' => 12
+            ),
+            array(
+                'jour' => 3,
+                'semaine' => 'A',
+                'debut' => 17,
+                'fin' => 18
+            ),
+            array(
+                'jour' => 5,
+                'semaine' => 'A',
+                'debut' => 10,
+                'fin' => 12
+            ),
+            array(
+                'jour' => 5,
+                'semaine' => 'A',
+                'debut' => 16,
+                'fin' => 18
+            ),
+            array(
+                'jour' => 6,
+                'semaine' => 'A',
+                'debut' => 10,
+                'fin' => 12
+            ),
         ));
 
         DB::table('inscrit')->insert(array(
@@ -159,6 +207,106 @@ class DatabaseSeeder extends Seeder
             ),
             array(
                 'idcreneau' => 1,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 3,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 3,
+                'idrole' => 3
+            ),
+            array(
+                'idcreneau' => 3,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 4,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 4,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 4,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 5,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 5,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 5,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 6,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 6,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 6,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 7,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 7,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 7,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 8,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 8,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 8,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 9,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 9,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 9,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 10,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 10,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 11,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 11,
                 'idrole' => 1
             )
         ));

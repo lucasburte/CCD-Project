@@ -23,4 +23,6 @@ Route::get('/users', 'Auth\UserListController@handle')->name('login');
 
 Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
+Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
+
 ///////////////////////////////////////////////

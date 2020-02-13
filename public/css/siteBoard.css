@@ -1,7 +1,6 @@
 /* Some Sass variables */
 body {
     margin: 0;
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.3em;
 }
@@ -10,18 +9,18 @@ body {
     display: grid;
     grid-template-rows: 40px 50px 1fr;
     background-color: rgba(82, 101, 165, 0.24);
-    color: #eee;
+    color: rgb(71, 71, 71);
 }
 .navbar {
-    padding-left: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 .navbar.app {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .navbar.board {
-    font-size: 1.1rem;
 }
 .lists {
     display: flex;
@@ -36,8 +35,16 @@ body {
     flex: 0 0 10px;
 }
 .list {
-    width: 300px;
+    width: 13.5%;
     height: calc(100% - 10px - 17px);
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .list {
+        width: 100px;
+        height: calc(100% - 10px - 17px);
+    }
 }
 .list > * {
     background-color: #e2e4e6;

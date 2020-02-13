@@ -12,9 +12,12 @@ class UserListController extends Controller {
         parent::__construct();
     }
 
-    public function handle(Request $req) {
+    public function handle() {
+        $request = request();
+        $route = $request->query('redirect');
+
         $users = User::get()->all();
 
-        return view('connection', ['users' => $users]);
+        return view('connection', ['users' => $users, 'route' => $route]);
     }
 }

@@ -12,8 +12,9 @@ class HomeController extends Controller {
         parent::__construct();
     }
 
-    public function handle(Request $req) {
-        $resp = parent::handle($req);
+    public function handle() {
+        $req = request();
+        $resp = parent::redirectIfNeeded($req);
         if ($resp)
             return $resp;
 

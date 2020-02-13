@@ -16,13 +16,12 @@ class Controller extends BaseController
 
     public function __construct() {}
 
-    public function handle(Request $request) {
+    public function redirectIfNeeded(Request $request) {
         if (!isset($_SESSION['login'])) {
-            $route = $request->route;
-            $connect = route('login',['back' => $route]);
-            // -> get route for /auth
-            // -> redirect
-            return redirect()->to($connect);
+            $route = $request->path();
+            $to = route('login');
+
+            return redirect("$to?redirect=$route");
         }
     }
 }

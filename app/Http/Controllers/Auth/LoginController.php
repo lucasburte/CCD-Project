@@ -4,19 +4,23 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 
+use Illuminate\Http\Request;
+
 class LoginController extends Controller
 {
     public function __construct() {
         parent::__construct();
     }
 
-    public function handle(Request $request) {
-        $resp = parent::handle($request);
-        if ($resp)
-            return $resp;
+    public function handle() {
+        $request = request();
 
-        $name = $request->input('name');
+        $name = $request->query('user');
 
-        // TODO: handle connection
+        if ($name) {
+            $_SESSION['login'] = $name;
+            return redirect($request->query('redirect'));
+        } else
+            return response('User not authenticated', 403);
     }
 }

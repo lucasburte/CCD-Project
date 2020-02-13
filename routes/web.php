@@ -17,14 +17,10 @@ use App\Http\Controllers\HomeController;
 
 use Illuminate\Http\Request;
 
-Route::get('/', function (Request $req) {
-    return (new HomeController())->handle($req);
-})->name('home');
+Route::get('/', 'HomeController@handle')->name('home');
 
-Route::get('/users', function (Request $req) {
-    return (new UserListController())->handle($req);
-})->name('login');
+Route::get('/users', 'Auth\UserListController@handle')->name('login');
+
+Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
 ///////////////////////////////////////////////
-
-Route::post('/auth', 'Auth\LoginController@handle');

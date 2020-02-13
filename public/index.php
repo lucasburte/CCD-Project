@@ -61,4 +61,4 @@ $response->send();
 
 $kernel->terminate($request, $response);
 
-session_destroy();
+sessions_register_shutdown();

@@ -79,6 +79,7 @@ body {
   font-weight: 900;
   content: '\f105';
   padding: 10px;
+  border-radius: 5px;
 }
 
 .liste-users {
@@ -111,7 +112,7 @@ body {
 
   cursor: pointer;
 
-  border-radius: 2% / 5%;
+  border-radius: 5px;
 
   transition: background 0.1s;
 }
@@ -123,6 +124,10 @@ body {
   width: 100%;
   font-size: 1rem;
   text-align: center;
+}
+
+.info {
+  margin-left: 1.5rem;
 }
 
 [tabindex="-1"]:focus {

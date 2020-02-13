@@ -9,6 +9,7 @@ class User extends Model {
     protected $id      = 'iduser';
     protected $nom     = 'nom';
     protected $idRole  = 'idrole';
+    protected $pp      = 'pp';
     public $timestamps = false;
 
     public function users() {

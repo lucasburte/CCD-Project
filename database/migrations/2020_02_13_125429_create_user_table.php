@@ -17,6 +17,7 @@ class CreateUserTable extends Migration
             $table->increments('iduser');
             $table->string('nom', 30);
             $table->integer('idrole')->nullable();
+            $table->string('pp', 50);
             $table->timestamps();
         });
     }

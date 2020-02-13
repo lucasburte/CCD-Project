@@ -13,6 +13,10 @@ class Inscrit extends Model {
     public $timestamps   = false;
 
     public function role() {
-        return Role::where('idrole', '=', $this->idrole)->get();
+        return Role::where('idrole', '=', $this->idrole)->first();
+    }
+
+    public function user() {
+        return User::where('iduser', '=', $this->iduser)->first();
     }
 }

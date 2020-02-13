@@ -28,8 +28,12 @@ class CreneauController extends Controller {
       $inscrits = Inscrit::where('idcreneau', '=', $id)->get();
       if (!$inscrits)
          return response('', 404);
-      $inscrits = $inscrits->each(function ($i) { return $i->role(); });
 
-      return view('creneau', ['roles' => $inscrits]);
+      $membres = [];
+      foreach ($inscrits as $i) {
+         $membres[] = ['role' => $i->role(), 'user' => $i->user()];
+      }
+
+      return view('creneau', ['membres' => $membres]);
    }
 }

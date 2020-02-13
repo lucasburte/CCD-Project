@@ -75,7 +75,7 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ array_key_exists('login', $_SESSION) ? $_SESSION['login'] : '<placeholder>' }}</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ array_key_exists('login', $_SESSION) ? $_SESSION['login'] : 'Non connecté' }}</span>
                 <img class="img-profile rounded-circle" src="img/1.jpg">
               </a>
               <!-- Dropdown - User Information -->

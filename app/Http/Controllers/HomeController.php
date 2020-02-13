@@ -18,6 +18,6 @@ class HomeController extends Controller {
         if ($resp)
             return $resp;
 
-        return view('connection', ['users' => $users]);
+        return view('board', ['users' => $users]);
     }
 }

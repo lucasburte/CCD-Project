@@ -15,7 +15,7 @@
                       <li>
                         <hr>{{$creneau['debut']}}h - {{$creneau['fin']}}h
                         <br>
-                        <a href={{ route('besoin')}} class="btn btn-info btn-circle" type="submit">
+                        <a href={{ route('creneau', ['id' => $creneau->idcreneau]) }} class="btn btn-info btn-circle" type="submit">
                           <i class="fas fa-info"></i>
                         </a>
                       </li>

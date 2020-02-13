@@ -11,7 +11,13 @@ class CreneauController extends Controller {
 
    //permet à la classe de trouver un créneau dans la base
    public function trouverCreneau($jour,$semaine,$deb,$fin){
-       $creneau = Creneau::where('jour','=',$jour,'and','semaine','=',$semaine,'and','debut','=',$deb,'and','fin','=',$fin)->first();
-        return $creneau ;
+/*        $creneau = Creneau::where('jour','=',$jour,'and','semaine','=',$semaine,'and','debut','=',$deb,'and','fin','=',$fin)->first();
+        return $creneau ; */
+        $req = request();
+        $resp = parent::redirectIfNeeded($req);
+        if ($resp)
+            return $resp;
+
+        return view('besoin');
    }
 }

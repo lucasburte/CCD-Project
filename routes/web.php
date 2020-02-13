@@ -13,18 +13,17 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\UserListController;
+use App\Http\Controllers\HomeController;
 
 use Illuminate\Http\Request;
 
-Route::get('/', 'HomeController@handle')->name('home');
-
-/* Route::get('/users', function (Request $request) {
-    return (new UserListController())->getAll();
-}); */
+Route::get('/', function (Request $req) {
+    return (new HomeController())->handle($req);
+})->name('home');
 
 Route::get('/users', function (Request $req) {
     return (new UserListController())->handle($req);
-})->name('get_users');
+})->name('login');
 
 ///////////////////////////////////////////////
 

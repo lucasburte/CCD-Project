@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class Controller extends BaseController
 {
@@ -17,9 +18,11 @@ class Controller extends BaseController
 
     public function handle(Request $request) {
         if (!isset($_SESSION['login'])) {
+            $route = $request->route;
+            $connect = route('login',['back' => $route]);
             // -> get route for /auth
             // -> redirect
-            return response('', 403);
+            return redirect()->to($connect);
         }
     }
 }

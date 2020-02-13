@@ -9593,8 +9593,8 @@ a:focus {
 
 .container,
 .container-fluid {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 .scroll-to-top {
@@ -9681,8 +9681,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #9b8f29;
-  background-image: linear-gradient(180deg, #b8aa2e 10%, #d4c431 100%);
+  background-color: rgb(41, 54, 92);
+  background-image: linear-gradient(180deg, rgb(51, 67, 112) 10%, rgb(61, 78, 131) 100%);
   background-size: cover;
 }
 

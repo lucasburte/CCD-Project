@@ -34,7 +34,7 @@
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
         <div class="sidebar-brand-icon rotate-n-15">
           <!--<i class="fas fa-laugh-wink"></i>-->
-          <img src="img/logo.svg" style="height:50px; width:50px;">
+          <img src="{{ route('img', ['file' => 'logo.svg']) }}" style="height:50px; width:50px;">
         </div>
         <div class="sidebar-brand-text mx-3">CoBoard</div>
       </a>
@@ -79,7 +79,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ array_key_exists('login', $_SESSION) ? $_SESSION['login'] : 'Non connecté' }}</span>
-                <img class="img-profile rounded-circle" src="img/1.jpg">
+                <img class="img-profile rounded-circle" src="{{ route('img', ['file' => '1.jpg']) }}">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

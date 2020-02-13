@@ -21,7 +21,7 @@ Route::get('/auth', 'Auth\LoginController@handle')->name('auth');
 
 Route::get('/logout', 'Auth\LogoutController@handle')->name('logout');
 
-Route::get('creneau/{id}','Creneau\CreneauController@handle')->name('creneau');
+Route::get('creneau/{id}','Creneau\CreneauController@handle_')->name('creneau');
 
 Route::get('/users', 'User\ListController@handle')->name('users');
 

@@ -17,7 +17,7 @@ class CreateInscritTable extends Migration
             $table->increments('idinscrit');
             $table->integer('idcreneau');
             $table->integer('idrole');
-            $table->integer('iduser');
+            $table->integer('iduser')->nullable();
             $table->timestamps();
         });
     }

@@ -14,9 +14,12 @@ class Inscrit extends Model {
 
     public function role() {
         return Role::where('idrole', '=', $this->idrole)->first();
+<<<<<<< Updated upstream
     }
 
     public function user() {
         return User::where('iduser', '=', $this->iduser)->first();
+=======
+>>>>>>> Stashed changes
     }
 }

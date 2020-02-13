@@ -13,7 +13,7 @@
                 @foreach ($creneaux as $creneau)
                   @if ($creneau->jour == $key)
                       <li>
-                        <hr>{{$creneau['debut']}}h - {{$creneau['fin']}}h
+                        {{$creneau['debut']}}h - {{$creneau['fin']}}h
                         <br>
                         <a href={{ route('creneau', ['id' => $creneau->idcreneau]) }} class="btn btn-info btn-circle" type="submit">
                           <i class="fas fa-info"></i>

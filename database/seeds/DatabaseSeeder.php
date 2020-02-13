@@ -121,5 +121,28 @@ class DatabaseSeeder extends Seeder
                 'fin' => 16
             ),
         ));
+
+        DB::table('inscrit')->insert(array(
+            array(
+                'idcreneau' => 2,
+                'idrole' => 2
+            ),
+            array(
+                'idcreneau' => 2,
+                'idrole' => 1
+            ),
+            array(
+                'idcreneau' => 2,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 1,
+                'idrole' => 4
+            ),
+            array(
+                'idcreneau' => 1,
+                'idrole' => 1
+            )
+        ));
     }
 }

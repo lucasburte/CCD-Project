@@ -15,12 +15,14 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\UserListController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('connection');
 })->name('home');
 
-Route::get('/users', function (Request $request) {
+/* Route::get('/users', function (Request $request) {
     return (new UserListController())->getAll();
-});
+}); */
+
+Route::get('/users', 'Auth\UserListController@getAll');
 
 ///////////////////////////////////////////////
 

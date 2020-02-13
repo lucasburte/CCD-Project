@@ -5,21 +5,11 @@
         <form action="/auth" method="post">
             @csrf
             <p>Selectionnez un utilisateur</p>
-
-            <li><a href="#">Lien menu 1</a>
-                <ul>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                </ul>
-            </li>
-{{--             @foreach ($users as $user)
-            <div>
-                <input type="radio" id="huey" name="users" value="huey">
-                <label for="huey"></label>
-            </div>
-            @endforeach --}}
-            
+                <select name="user" id="user-select">
+                    <option value="">--Please choose an option--</option>
+                    @foreach ($users as $user)
+                        <option value="{{ $user->name }}">{{ $user->name }}</option>
+                    @endforeach 
+            <input type="submit"> 
         </form>
     @endsection
